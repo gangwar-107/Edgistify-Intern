@@ -1,0 +1,5 @@
+1. Open phpMyAdmin locahost.
+2. create data base and import book1 excel file.
+3. run express App using command 'npm run seerver'
+4. then make queries from postman.
+5. All endpoints available in routes folder of GeneralApp.

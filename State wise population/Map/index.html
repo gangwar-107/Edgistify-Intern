@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jVectorMap demo</title>
+  <link rel="stylesheet" href="jquery-jvectormap-2.0.5.css" type="text/css" media="screen"/>
+  <script src="jquery.js"></script>
+  <script src="jquery-jvectormap-2.0.5.min.js"></script>
+  <script src="jquery-jvectormap-in-mill.js"></script>
+</head>
+<body>
+  <div id="world-map" style="width: 600px; height: 400px"></div>
+  <script>
+    $(function(){
+
+   var popData = {
+   "IN-DL":18710922,
+   "IN-BR":18710922
+   ,
+   "IN-HR":28204692
+   ,
+   "IN-KL":35699443
+   ,
+   "IN-HP":7451955
+   ,
+   "IN-PB":30141373
+   ,
+   "IN-GA":1586250
+   ,
+   "IN-UT":11250858
+   ,
+   "IN-CH":1158473
+   ,
+   "IN-GJ":63872399
+   ,
+   "IN-DD":615724
+   ,
+   "IN-TN":77841267
+   ,
+   "IN-CT":29436231
+   ,
+   "IN-AN":417036
+   ,
+   "IN-MH":123144223
+   ,
+   "IN-KA":67562686
+   ,
+   "IN-WB":99609303
+   ,
+   "IN-OR":46356334
+   ,
+   "IN-PY":1413542
+   ,
+   "IN-AP":53903393
+   ,
+   "IN-JH":38593948
+   ,
+   "IN-MZ":1239244
+   ,
+   "IN-TR":4169794
+   ,
+   "IN-MP":85358965
+   ,
+   "IN-UP":237882725
+   ,
+   "IN-RJ":81032689
+   ,
+   "IN-SK":690251
+   ,
+   "IN-BR":124799926
+   ,
+   "IN-MN":3091545
+   ,
+   "IN-AR":1570458
+   ,
+   "IN-JK":13606320
+   ,
+   "IN-NL":2249695
+   ,
+   "IN-ML":3366710
+   ,
+   "IN-AS":35607039
+   }
+
+      $('#world-map').vectorMap({
+  map: 'in_mill',
+  series: {
+    regions: [{
+      values: popData,
+      scale: ['#C8EEFF', '#0071A4'],
+      normalizeFunction: 'polynomial'
+    }]
+  },
+  onRegionTipShow: function(e, el, code){
+    el.html(el.html()+' (population - '+popData[code]+')');
+  }
+});
+    });
+  </script>
+</body>
+</html>
