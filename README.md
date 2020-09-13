@@ -25,9 +25,14 @@ https://jvectormap.com/examples/drill-down/
 https://geojson.io/#map=5/21.861/82.793
 https://leafletjs.com/examples.html
 
+# API Block Diagram
+![ScreenShot](https://github.com/gangwar-107/Edgistify-Intern/blob/master/Data%20Fetching%20API%20Block%20Diagram.jpg)
+
 # 2nd Task
 In 2nd task I developed a custom map which represents India's states population in color gradient.
 
 # Map Screnshot
+![ScreenShot](https://github.com/gangwar-107/Edgistify-Intern/blob/master/Screenshot%20(1).png)
+
 
 
